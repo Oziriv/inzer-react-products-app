@@ -10,6 +10,16 @@ export interface IProduct {
   rating?: number
   stock?: number
   images?: string[]
+  brand?: string
+  discountPercentage?: number
+  sku?: string
+  reviews?: Array<{
+    rating: number
+    comment: string
+    date: string
+    reviewerName: string
+    reviewerEmail: string
+  }>
 
   isPublished?: boolean
   createdAt?: string
